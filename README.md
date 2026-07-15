@@ -8,11 +8,6 @@ A modern, responsive, and high-performance ERP SaaS landing page built with Reac
 
 ---
 
-## 📸 Preview
-
-![Parchii ERP Preview](./public/preview.png)
-
----
 
 ## ✨ Features
 
@@ -80,13 +75,13 @@ src/
 Clone the repository
 
 ```bash
-git clone https://github.com/your-username/parchii-erp.git
+git clone https://github.com/sujanchakma1/Parchii
 ```
 
 Go to project
 
 ```bash
-cd parchii-erp
+cd Parchii
 ```
 
 Install dependencies
