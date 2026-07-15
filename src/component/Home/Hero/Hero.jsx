@@ -52,7 +52,7 @@ const Hero = () => {
         </p>
 
         {/* Button */}
-        <button className="mt-12 flex items-center gap-3 rounded-xl bg-primary px-8 py-4 text-lg font-semibold text-white transition duration-300 hover:-translate-y-1 hover:bg-primary-dark">
+        <button className="mt-12 flex items-center gap-3 btn btn-primary btn-xl">
           Request A Demo
           <ArrowRight size={22} />
         </button>
