@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+@theme {
+  /* ========= Brand Colors ========= */
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+  --color-secondary: #38bdf8;
+  --color-accent: #22c55e;
+
+  /* ========= Background ========= */
+  --color-background: #ffffff;
+  --color-surface: #f8fafc;
+  --color-surface-blue: #eff8ff;
+  --color-surface-mint: #ecfdf5;
+  --color-surface-cream: #fff8dc;
+
+  /* ========= Text ========= */
+  --color-heading: #0f172a;
+  --color-body: #475569;
+  --color-muted: #64748b;
+
+  /* ========= Border ========= */
+  --color-border: #e2e8f0;
+
+  /* ========= Status ========= */
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-info: #0ea5e9;
+
+  /* ========= Radius ========= */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+
+  /* ========= Shadow ========= */
+  --shadow-soft: 0 10px 30px rgba(37, 99, 235, 0.08);
+  --shadow-card: 0 15px 40px rgba(15, 23, 42, 0.08);
+  --shadow-hover: 0 20px 45px rgba(37, 99, 235, 0.12);
+
+  /* ========= Container ========= */
+  --container-7xl: 1280px;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-body;
+    font-family:
+      Inter,
+      ui-sans-serif,
+      system-ui,
+      sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-heading font-bold;
+  }
+
+  section {
+    @apply py-20;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply mx-auto w-full max-w-7xl px-4 md:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark rounded-xl px-6 py-3 font-semibold text-white transition-all duration-300;
+    box-shadow: var(--shadow-soft);
+  }
+
+  .btn-secondary {
+    @apply border-primary text-primary hover:bg-primary rounded-xl border px-6 py-3 font-semibold transition-all duration-300 hover:text-white;
+  }
+
+  .card {
+    @apply bg-background rounded-2xl border border-border p-6 transition-all duration-300;
+    box-shadow: var(--shadow-card);
+  }
+
+  .card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+  }
+
+  .section-light {
+    @apply bg-surface;
+  }
+
+  .section-blue {
+    @apply bg-surface-blue;
+  }
+
+  .section-mint {
+    @apply bg-surface-mint;
+  }
+
+  .section-cream {
+    @apply bg-surface-cream;
+  }
+
+  .heading-gradient {
+    background: linear-gradient(90deg, #2563eb, #38bdf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .transition-default {
+    @apply transition-all duration-300;
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-hover {
+    box-shadow: var(--shadow-hover);
+  }
+}
