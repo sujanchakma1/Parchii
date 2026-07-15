@@ -2,7 +2,7 @@ import BusinessSection from "./BusinessSection/BusinessSection";
 import CTASection from "./CTASection/CTASection";
 import FinanceSection from "./FinanceSection/FinanceSection";
 import Hero from "./Hero/Hero";
-import InventorySection from "./InventorySection/InventorySection";
+import InventorySection from "./SupplyChainSection/InventorySection";
 import Manufacturing from "./Manufacturing/Manufacturing";
 import PeoplePerformance from "./PeoplePerformance/PeoplePerformance";
 import PurchaseModule from "./PurchaseModule/PurchaseModule";

@@ -1,6 +1,9 @@
+import bussiness from "./asset/bussiness.png";
+
+
 const BusinessSection = () => {
   return (
-    <section className="relative isolate  overflow-hidden py-24">
+    <section className="relative isolate  overflow-hidden py-30">
       {/* Background Glow */}
       <div
         className="absolute inset-0 -z-10"
@@ -16,12 +19,12 @@ const BusinessSection = () => {
 
       <div className="container-custom">
         {/* Image */}
-        <div className="flex justify-center">
-          <div className="overflow-hidden rounded-3xl border-4 border-white bg-white shadow-2xl">
+        <div className="flex justify-center mb-24">
+          <div className="overflow-hidden rounded-2xl ">
             <img
-              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200"
+              src={bussiness}
               alt="ERP Dashboard"
-              className="h-[250px] w-full object-cover md:h-[420px] md:w-[760px]"
+              className="w-full object-cover"
             />
           </div>
         </div>
@@ -30,7 +33,7 @@ const BusinessSection = () => {
         <div className="mt-16 grid gap-10 lg:grid-cols-2 lg:items-center">
           {/* Left */}
           <div>
-            <h2 className="text-4xl font-bold leading-tight text-heading md:text-5xl">
+            <h2 className="text-4xl font-bold leading-tight text-heading">
               Every Day Without
               <br />
               ERP Your Business

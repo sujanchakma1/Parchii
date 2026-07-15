@@ -1,6 +1,6 @@
-import { Menu, Search } from "lucide-react";
+import { Search } from "lucide-react";
 import { RiMenu3Line } from "react-icons/ri";
-
+import logo from "../../../public/logo.svg";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -15,9 +15,7 @@ const Navbar = () => {
         <nav className="flex h-24 items-center justify-between">
           {/* Logo */}
           <div>
-            <h2 className="text-3xl font-bold text-primary">
-              PARCHI
-            </h2>
+            <img src={logo} alt="Logo"  />
           </div>
 
           {/* Desktop Menu */}

@@ -1,4 +1,7 @@
 import { Check } from "lucide-react";
+import salesOrder from "./asset/Sales & OrderManagement.jpg";
+import group1 from "./asset/Quotation Conversion 1.png";
+import group2 from "./asset/image 3.png";
 
 const features = [
   "CRM",
@@ -15,11 +18,11 @@ const SalesOrder = () => {
           {/* LEFT CONTENT */}
 
           <div>
-            <h2 className="text-4xl font-bold text-heading md:text-5xl">
+            <h2 className="text-4xl font-bold text-heading">
               Sales & Order Management
             </h2>
 
-            <p className="mt-8 max-w-xl text-lg leading-8 text-muted text-gray-700">
+            <p className="mt-8 max-w-xl text-lg leading-8">
               Handle quotations, customer orders, deliveries, invoicing, and
               collections. Manage CRM, price lists, promotions, multi-currency,
               sales teams, and returns — end to end.
@@ -36,7 +39,7 @@ const SalesOrder = () => {
                     />
                   </div>
 
-                  <span className="text-lg text-heading">{item}</span>
+                  <span className="">{item}</span>
                 </div>
               ))}
             </div>
@@ -44,55 +47,22 @@ const SalesOrder = () => {
 
           {/* RIGHT IMAGE */}
 
-          <div className="relative mx-auto w-full max-w-xl">
+          <div className="relative w-full">
             <img
-              src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200"
-              alt="Finance"
-              className="h-[320px] w-full rounded-3xl object-cover shadow-2xl md:h-[500px]"
+              src={salesOrder}
+              alt="Sales & Order Management"
+              className="w-full rounded-2xl object-cover"
             />
 
-            {/* Profit Card */}
-
-            <div className="absolute -left-10 top-10 hidden w-44 rounded-2xl bg-white p-5 shadow-xl md:block">
-              <p className="text-xs text-gray-400">NET PROFIT</p>
-
-              <h4 className="mt-2 text-3xl font-bold text-green-600">
-                $54,661
-              </h4>
-
-              <p className="mt-2 text-xs text-green-500">▲ 12.4%</p>
+            {/* Top Floating Card */}
+            <div className="absolute -right-6 -top-11 hidden w-52 rounded-xl md:block">
+              <img src={group1} alt="Group 1" className="w-full" />
             </div>
 
-            {/* Payable */}
+            {/* Bottom Card */}
 
-            <div className="absolute -right-10 top-0 hidden w-44 rounded-2xl bg-white p-5 shadow-xl md:block">
-              <p className="text-xs text-gray-400">TOTAL PAYABLE</p>
-
-              <h4 className="mt-2 text-3xl font-bold">$240K</h4>
-
-              <p className="mt-2 text-xs text-green-500">▲ 12.4%</p>
-            </div>
-
-            {/* Chart */}
-
-            <div className="absolute -bottom-10 left-1/2 hidden w-[420px] -translate-x-1/2 rounded-3xl bg-white p-6 shadow-2xl md:block">
-              <h4 className="font-semibold">Income vs Expense</h4>
-
-              <div className="mt-8 flex h-44 items-end justify-between gap-3">
-                {[80, 65, 95, 55, 100, 70].map((v, i) => (
-                  <div key={i} className="flex flex-1 items-end gap-1">
-                    <div
-                      style={{ height: `${v}%` }}
-                      className="w-full rounded bg-blue-600"
-                    />
-
-                    <div
-                      style={{ height: `${v - 20}%` }}
-                      className="w-full rounded bg-blue-300"
-                    />
-                  </div>
-                ))}
-              </div>
+            <div className="absolute -bottom-8 -left-8 hidden w-80 rounded-xl md:block">
+              <img src={group2} alt="Group 2" className="w-full" />
             </div>
           </div>
         </div>

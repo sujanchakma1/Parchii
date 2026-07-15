@@ -1,4 +1,4 @@
-import { ArrowRight, Sparkles, Check } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -56,36 +56,6 @@ const Hero = () => {
           Request A Demo
           <ArrowRight size={22} />
         </button>
-      </div>
-      {/* Trust Features */}
-      <div className="mt-8 flex flex-wrap items-center justify-center gap-x-5 gap-y-3 text-sm font-medium text-gray-700">
-        <div className="flex items-center gap-2">
-          <div className="mt-1 flex h-7 w-7 items-center justify-center rounded-full bg-green-100">
-            <Check size={16} className="text-green-600" strokeWidth={3} />
-          </div>
-          <span>14-day free trial</span>
-        </div>
-
-        <div className="flex items-center gap-2">
-          <div className="mt-1 flex h-7 w-7 items-center justify-center rounded-full bg-green-100">
-            <Check size={16} className="text-green-600" strokeWidth={3} />
-          </div>
-          <span>No credit card</span>
-        </div>
-
-        <div className="flex items-center gap-2">
-          <div className="mt-1 flex h-7 w-7 items-center justify-center rounded-full bg-green-100">
-            <Check size={16} className="text-green-600" strokeWidth={3} />
-          </div>
-          <span>Live in 1 day</span>
-        </div>
-
-        <div className="flex items-center gap-2">
-          <div className="mt-1 flex h-7 w-7 items-center justify-center rounded-full bg-green-100">
-            <Check size={16} className="text-green-600" strokeWidth={3} />
-          </div>
-          <span>Local support India, UAE, KSA</span>
-        </div>
       </div>
     </section>
   );

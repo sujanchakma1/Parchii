@@ -1,15 +1,13 @@
-import {
-  Zap,
-  Boxes,
-  FileBarChart,
-  Workflow,
-  Cog,
-  LayoutDashboard,
-} from "lucide-react";
+import energy from "./assets/leadership_2818425 1.png";
+import inventory from "./assets/search_16729381 1.png";
+import report from "./assets/business_16724176 1.png";
+import workflow from "./assets/leadership_2818425 1 (1).png";
+import accounting from "./assets/search_16729381 1 (1).png";
+import LayoutDashboard from "./assets/business_16724176 1 (1).png";
 
 const features = [
   {
-    icon: Zap,
+    img: energy,
     title: "Departments Working in Silos",
     description:
       "Purchase, sales, and finance teams maintain separate records causing errors, delays, and duplicate data entry across your business.",
@@ -17,7 +15,7 @@ const features = [
     bg: "bg-yellow-100",
   },
   {
-    icon: Boxes,
+    img: inventory,
     title: "Inventory You Can't Trust",
     description:
       "Stock quantities become unreliable. Customer payments and supplier dues become difficult to track. Business owners lack real-time visibility.",
@@ -25,7 +23,7 @@ const features = [
     bg: "bg-orange-100",
   },
   {
-    icon: FileBarChart,
+    img: report,
     title: "Slow, Inconsistent Reporting",
     description:
       "Reporting becomes slow and manual. Management can't monitor performance, approvals, or cash flow instantly.",
@@ -33,7 +31,7 @@ const features = [
     bg: "bg-blue-100",
   },
   {
-    icon: Workflow,
+    img: workflow,
     title: "Connected Workflow",
     description:
       "Purchasing, inventory, sales, finance, manufacturing and HR work together in one integrated platform.",
@@ -41,7 +39,7 @@ const features = [
     bg: "bg-cyan-100",
   },
   {
-    icon: Cog,
+    img: accounting,
     title: "Automatic Posting",
     description:
       "Transactions automatically update inventory and accounting without duplicate manual entry.",
@@ -49,7 +47,7 @@ const features = [
     bg: "bg-indigo-100",
   },
   {
-    icon: LayoutDashboard,
+    img: LayoutDashboard,
     title: "Management Visibility",
     description:
       "Monitor dashboards, approvals, stock, cash flow and business performance in real time.",
@@ -62,44 +60,26 @@ const WhyERPSection = () => {
   return (
     <section className="py-24">
       <div className="container-custom">
-
         {/* Heading */}
 
-        <div className="mb-20 text-center">
-
-          <h2 className="text-4xl font-bold text-heading md:text-5xl">
+        <div className="mb-20 ">
+          <h2 className="text-4xl font-bold text-heading">
             Why Businesses Need ERP.?
           </h2>
-
-          <p className="mx-auto mt-5 max-w-2xl text-lg text-muted">
-            Eliminate disconnected systems and streamline every department
-            with one centralized ERP platform.
-          </p>
-
         </div>
 
         {/* Grid */}
 
         <div className="grid gap-x-14 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
-
           {features.map((item, index) => {
-            const Icon = item.icon;
-
             return (
-              <div
-                key={index}
-                className="group"
-              >
+              <div key={index} className="group">
                 {/* Icon */}
 
                 <div
-                  className={`mb-6 flex h-16 w-16 items-center justify-center rounded-2xl ${item.bg} transition duration-300 group-hover:scale-110`}
+                  className={`mb-6 flex h-16 w-16 items-center justify-center rounded-2xl transition duration-300 group-hover:scale-110`}
                 >
-                  <Icon
-                    className={item.color}
-                    size={34}
-                    strokeWidth={2}
-                  />
+                  <img src={item.img} alt={item.title} />
                 </div>
 
                 {/* Title */}
@@ -110,9 +90,7 @@ const WhyERPSection = () => {
 
                 {/* Description */}
 
-                <p className="leading-7 text-muted">
-                  {item.description}
-                </p>
+                <p className="leading-7 text-muted">{item.description}</p>
               </div>
             );
           })}
