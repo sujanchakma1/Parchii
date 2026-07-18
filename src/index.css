@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+@keyframes menuIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px) scale(.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-in {
+  animation: menuIn .28s ease;
+}
+
 @theme {
   /* ========= Brand Colors ========= */
   --color-primary: #2563eb;
